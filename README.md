@@ -8,9 +8,9 @@ It is designed to work hand in hand with the following additional service.
 
 ## To Use
 
-To use this site edit ``js/main.min.js`` to reflect your API interface or use my public API proxy.
+To use this site edit ``js/config.js`` to reflect your API interface or use my public API proxy.
 
-You can then update the list of nodes to show on the site in ``js/main.min.js`` in the section for the nodes.
+You can then update the list of nodes to show on the site in ``js/config.js`` in the section for the nodes.
 
 ```javascript
 const nodes = [
