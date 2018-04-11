@@ -24,7 +24,8 @@ function updateTable (table) {
     var d = this.data()
     var that = this
     $.ajax({
-      url: apiInterface + d[0] + '/' + d[1] + '/getinfo?random=' + (new Date()).getTime(),
+      // url: apiInterface + d[0] + '/' + d[1] + '/getinfo?random=' + (new Date()).getTime(),
+      url: 'http://' + d[0] + ':' + d[1] + '/getinfo'
       dataType: 'json',
       type: 'GET',
       cache: 'false',
@@ -60,7 +61,8 @@ function updateTable (table) {
 function loadTable (table) {
   $.each(nodes, function (index, node) {
     $.ajax({
-      url: apiInterface + node.hostname + '/' + node.port + '/getinfo?random=' + (new Date()).getTime(),
+      // url: apiInterface + node.hostname + '/' + node.port + '/getinfo?random=' + (new Date()).getTime(),      
+      url: 'http://' + node.hostname + ':' + node.port + '/getinfo',
       dataType: 'json',
       type: 'GET',
       cache: 'false',
