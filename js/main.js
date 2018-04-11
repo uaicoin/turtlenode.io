@@ -25,7 +25,7 @@ function updateTable (table) {
     var that = this
     $.ajax({
       // url: apiInterface + d[0] + '/' + d[1] + '/getinfo?random=' + (new Date()).getTime(),
-      url: 'http://' + d[0] + ':' + d[1] + '/getinfo'
+      url: 'http://' + d[0] + ':' + d[1] + '/getinfo',
       dataType: 'json',
       type: 'GET',
       cache: 'false',
